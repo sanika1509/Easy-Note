@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+  margin: 0%;
+  padding: 0%;
+  background-image: url("./Images/bg.jpg");
+  background-size: cover; /* Adjust to ensure the image covers the area */
+  height: 95vh; /* Use viewport height to cover the full screen */
+  width: 100%; /* Ensure the banner covers the full width */
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  line-height: 100px;
+  background-color: #f5ba13;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.main_note {
+  width: 500px;
+  padding: 15px 10px 5px 10px;
+  border-radius: 7px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.my_notes h1 {
+  color: #34495e;
+}
+
+.my_notes p {
+  color: grey;
+}
+
+form {
+  min-height: 50px;
+
+  padding: 15px 10px 5px 10px;
+  /* box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.5); */
+  border-radius: 10px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.addBtn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -28px;
+  left: 400px;
+  cursor: pointer;
+  background-color: #fff !important;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 100% !important;
+  padding: 2%;
+  text-align: center;
+}
+
+.addBtn .plus_sign {
+  font-size: 20px !important;
+  font-weight: 900;
+  color: rgba(59, 89, 152, 1) !important;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+  border: 0;
+}
+
+.addBtn:hover {
+  background-color: rgba(59, 89, 152, 1) !important;
+}
+
+.addBtn:hover .plus_sign {
+  color: #fff;
+  background: transparent;
+}
+
+.note {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  /* color: #f4b400; */
+  color: rgba(59, 89, 152, 1) !important;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.deleteIcon {
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.editIcon {
+  padding: 2%;
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.note .btn:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.note .btn:hover .deleteIcon {
+  background-color: rgba(255, 99, 71, 0.7) !important;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 0%;
+  font-weight: bold;
+  padding: 1%;
+  background-color: rgba(59, 89, 152, 0.9) !important;
+}
+
+.banner {
+  background-image: url("./Images/banner.jpg");
+  background-size: cover; /* Adjust to ensure the image covers the area */
+  background-position: center; /* Center the image */
+  height: 85vh; /* Use viewport height to cover the full screen */
+  width: 100%; /* Ensure the banner covers the full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  padding: 3%;
+}
+
+.labelStyle {
+  text-align: center; /* Center the text */
+  padding: 1%; /* Add padding around the text */
+  font-family: "poppins"; /* Use a custom font, feel free to replace with a preferred one */
+  font-size: 1.5rem; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Set a darker text color for good contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    /* Main shadow */ 1px 1px 10px rgba(0, 0, 0, 0.1); /* Additional soft shadow */
+  transition: transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #007bff; /* Underline color and thickness */
+}
+
+.blankBox {
+  width: 500px; /* Adjust width as needed */
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background: rgba(0, 0, 0, 0.2);
+  margin: auto; /* Center the card horizontally */
+  margin-top: 2%; /* Adjust top margin to center vertically */
+  margin-bottom: 2%;
+}
+
+.login-container {
+  border-radius: 7px;
+  margin-top: 1%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bi-pencil {
+  margin-top: 2%;
+}

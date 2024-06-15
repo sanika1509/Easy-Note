@@ -1,0 +1,46 @@
+/* Header.css */
+.logo-img {
+  margin-right: 10px;
+  width: 70px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+.navbar {
+  background-color: rgba(59, 89, 152, 0.9) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Increase font size for brand */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem; /* Adjust font size for nav links */
+  margin: 0 10px; /* Add spacing between nav links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from toggler button */
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff; /* Change toggler icon color */
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5); /* Change toggler color */
+}
+.navbar {
+  background-color: yellow;
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack nav items vertically on small screens */
+  }
+
+  .nav-item {
+    margin-bottom: 10px; /* Add spacing between stacked nav items */
+  }
+}
